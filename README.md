@@ -12,6 +12,11 @@
 
 #### 发布项目 <br>
 
+###### 注意
+
+发布时：index.html中要直接引用的文件地址<br>
+发布时：图片引用地址要更改 <br>
+
 1. git init <br>
 2. git add .  （一定注意add后面的 . 前后要有空格）<br>
 3. git commit -m 'react' <br>
@@ -23,4 +28,14 @@
 
 #### 知识点
 
-1. 
+1. 图片的信息存在imageDatas.json中 <br>
+2. 翻转图片：.img-back 先翻转180度，这样就到了背面，点击时父元素翻转180度，这样子元素就是360度，就朝上了。<br>
+   父元素 .img-figure.is-inverse{transform:translate(320px) rotateY(180deg);}<br>
+   子元素 .img-back{transform:rotateY(180deg) translateZ(1px);} （translateZ(1px)是为了兼容性）<br>
+   改进翻转画面：.img-sec （perspective:600px;）<br>
+   .img-figure  <br>
+     　{ <br>
+      　transform-origin: 0 50% 0; <br>
+      　transform-style:preserve-3d; <br>
+      　transition:transform .6s ease-in-out,left .6s ease-in-out,top .6s ease-in-out; <br>
+     　} <br>
