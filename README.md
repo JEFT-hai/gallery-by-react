@@ -39,3 +39,5 @@
       　transform-style:preserve-3d; <br>
       　transition:transform .6s ease-in-out,left .6s ease-in-out,top .6s ease-in-out; <br>
      　} <br>
+3. react创建组件 class AppComponent extends React.Component {}
+4. react获取DOM节点 let stageDOM = ReactDOM.findDOMNode(this.refs.stage) ref="stage"。
