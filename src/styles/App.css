@@ -19,8 +19,8 @@ html, body {
 }
 
 img{
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
 }
 /*stage -- start*/
 .stage {
@@ -44,10 +44,10 @@ img{
 }
 .img-figure {
   position: absolute;
-  width: 260px;
-  height: 290px;
+  width: 320px;
+  height: 360px;
   margin: 0;
-  padding: 30px;
+  padding: 40px;
 
   cursor: pointer;
   transform-origin: 0 50% 0;
