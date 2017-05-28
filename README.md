@@ -41,3 +41,5 @@
      　} <br>
 3. react创建组件 class AppComponent extends React.Component {}
 4. react获取DOM节点 let stageDOM = ReactDOM.findDOMNode(this.refs.stage) ref="stage"。
+5. Icon Font:字体文件 取代图片文件展示图片（1体积小，2支持css3属性变形）需在头部进行字体声明：@font-face{font-family:"";src:url() format(兼容)}
+6. react 重新渲染时，是比较之前的结构和现在的结构，用key 给数组对应的一个值更快速的配对，加快性能。(现在key值是必须的）key={index}
