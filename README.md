@@ -26,6 +26,9 @@
 7. git subtree push --prefix=dist origin gh-pages 推送到Github提供的静态文件访问上 <br>
 8. 访问http://jeft-hai.github.io/gallery-by-react/ <br>
 
+有时候pull后上传出错,可以用<br>
+git pull origin master  --allow-unrelated-histories命令 <br>
+
 #### 知识点
 
 1. 图片的信息存在imageDatas.json中 <br>
